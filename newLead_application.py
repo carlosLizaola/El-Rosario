@@ -12,7 +12,7 @@ driver.get("https://aplatamqa.com/portal-alumno/login/new-account?schoolId=36")
 driver.maximize_window()
 
 email = driver.find_element(By.XPATH, "//input[@formcontrolname='email']")
-email.send_keys("2024070218@test.com")
+email.send_keys("2024070220@test.com")
 
 password = driver.find_element(By.XPATH, "//input[@formcontrolname='password']")
 password.send_keys("Test.123")
