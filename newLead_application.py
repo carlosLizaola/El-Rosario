@@ -7,12 +7,12 @@ from selenium.webdriver.support.ui import WebDriverWait
 from selenium.common.exceptions import NoSuchElementException, TimeoutException
 from selenium.webdriver.support import expected_conditions as EC
 
-driver = webdriver.Chrome()
+driver = webdriver.Edge()
 driver.get("https://aplatamqa.com/portal-alumno/login/new-account?schoolId=36")
 driver.maximize_window()
 
 email = driver.find_element(By.XPATH, "//input[@formcontrolname='email']")
-email.send_keys("2024070220@test.com")
+email.send_keys("zeipuhehasse-3365@yopmail.com")
 
 password = driver.find_element(By.XPATH, "//input[@formcontrolname='password']")
 password.send_keys("Test.123")
@@ -70,7 +70,7 @@ documentType = Select(selectDocumentType)
 documentType.select_by_value('0: Object')
 
 documentNumber = driver.find_element(By.XPATH, "//input[contains(@id,'PERSONAL_DATA_documentNumber')]")
-documentNumber.send_keys("2024070211")
+documentNumber.send_keys("20240709012")
 
 driver.find_element(By.XPATH, "(//button[contains(@type,'button')])[1]").click() #Fecha de expedicion del documento
 selectYear = WebDriverWait(driver,10).until(EC.visibility_of_element_located((By.XPATH, "//select[@aria-label='Select year']")))
